@@ -1,3 +1,13 @@
+// Fix for Portfolio button navigation
+document.addEventListener('DOMContentLoaded', function() {
+    var portfolioBtn = document.getElementById('portfolio-link');
+    if (portfolioBtn) {
+        portfolioBtn.addEventListener('click', function(e) {
+            // Allow default navigation to portfolio.html
+            window.location.href = 'portfolio.html';
+        });
+    }
+});
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Add scroll reveal animation to various elements
